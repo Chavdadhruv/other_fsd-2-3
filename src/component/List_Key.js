@@ -1,8 +1,7 @@
 import React from "react"
 
 function List_Key(){
-    
-   const ary=[{id:1,name:"Ken"},{id:2,name:"Noah"},{id:3,name:"Mark"}]
+    const ary=[{id:1,name:"Ken"},{id:2,name:"Noah"},{id:3,name:"Mark"}]
     return(<ul>
        {
         ary.map((value)=>{
