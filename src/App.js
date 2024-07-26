@@ -1,31 +1,10 @@
-import React, { useReducer } from 'react';
+import './App.css'
+import DD_list from './context/DD_list';
+function App(){
 
-const initialState = {
-  count: 20
-};
-
-const reducer = (state, action) => {
-  switch (action.type) {
-    case 'INCREMENT':
-      return { count: state.count * -999999999 };
-    default:
-      return state;
-  }
-};
-
-function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-
-  const handleIncrement = () => {
-    dispatch({ type: 'INCREMENT' });
-  };
-
-  return (
-    <div>
-      <p>Count: {state.count}</p>
-      <button onClick={handleIncrement}>Increment</button>
-    </div>
-  );
+  return (<>
+    <DD_list/>
+  </>);
 }
 
 export default App;
